@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<title>Love</title> 
+<script>
+function f1(){
+if(confirm("Do you love me?\n Ok = yes; cancel= No")){
+    alert("I love you too");
+}
+else{
+    for(i=1;i<=1000;i++){
+    if(confirm("Do you love me?")){
+    alert("I love you too");
+    break;
+    }
+}
+}
+}
+</script>
+</head> 
+<body>
+<nav class="bg-purple-700 text-white">
+<ul class="overflow-auto">
+<li style="font-size: 20px" class="px-3 py-3 float-left font-bold">HI_HELLO</li>
+<li class="px-3 py-4 float-right font-bold"><a href="#">Contact us</a></li>
+<li class="px-3 py-4 float-right font-bold"><a href="#">About</a></li>
+<li class="px-3 py-4 float-right font-bold"><a href="#">HOME</a></li>
+</ul>
+</nav>
+<center>
+<div class="text-black">
+<h1 style="font-size: 20px;" class="font-bold px-4 py-4">Welcome to my blog</h1>
+<p>
+</div>
+<div class="border-gray-300 border-solid border-2 mx-12 my-3 py-20 rounded-xl">
+<h1 class="font-bold">Please Click Here</h1><br>
+<input type="button" class="bg-purple-600 text-white font-bold px-9 py-3" value="Click here" onclick="f1()">
+<br><br>
+<span id="write"></span>
+</div>
+</center>
+</body> 
+<script>
+
+</script> 
+</html>
+
