@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>Thala Website</title>
+  <style>
+    h1 {
+      background-color: green;
+      color: white;
+      border-radius: 10px;
+    }
+    #paad {
+      background-color: yellow;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+    input {
+      border-radius: 5px;
+      border: 2px solid black;  
+    }
+    #puk {
+      border-radius: 5px;
+      border: 2px solid black;  
+      background-color: blue;
+      color: white;
+    }
+  </style>
+  <script>
+    function g() { 
+      var a = document.getElementById('hh').value;
+      if (a.length === 7) {
+        if (confirm(a[0] + "+" + a[1] + "+" + a[2] + "+" + a[3] + "+" + a[4] + "+" + a[5] + "+" + a[6] + " = Thala for a reason")) {             window.open("https://www.youtube.com/watch?v=JAIVxKw36Rg&t=1m42s", "_blank" );
+        }
+        else{     window.open("https://www.youtube.com/watch?v=JAIVxKw36Rg&t=1m42s", "_blank" )
+        }
+      } else {
+        alert("Your name doesn't contain 7 letters");
+      }
+    }
+  </script>
+</head>
+<body>
+  <center>
+    <h1>No. 7</h1>
+    <div id="paad">
+      <br><br>
+      <b>Enter your name:</b><br>
+      <input id="hh" type="text" placeholder="Enter here"><br><br>
+      <input type="submit" value="Result" onclick="g()"><br><br>
+    </div>
+  </center>
+</body>
+</html>
