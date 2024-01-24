@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Couples</title>
+</head>
+<body>
+<button onclick="nameGen()">Generate Random Gay Couples</button>
+<span id="span"></span>
+<style>
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        button {
+            padding: 10px;
+            display: 
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        #span {
+            font-size: 20px;
+        }
+</style>
+<script>
+function indexCol(conn) {
+    let i = Math.floor(Math.random() * conn);
+    let j = Math.floor(Math.random() * conn);
+    
+    if (i === j) {
+        // If i and j are equal, call the function recursively
+        return indexCol(conn);
+    } else {
+        // Return an object with i and j properties
+        return { i, j };
+    }
+}
+
+function nameGen() {
+    const boysName = [
+        'Dhritiman', 'Supratim', 'Prudam', 'Adrish',
+        'Jayanta', 'Koyel', 'Abhinav', 'Nishant','Farhaz', 'Harshit','Ricky'
+    ];
+
+    // Call indexCol to get two different indices
+    let a = indexCol(boysName.length);
+    let b1 = a.i;
+    let b2 = a.j;
+
+    // Access boysName array using the indices
+    let Name = boysName[b1] + " ❤️ " + boysName[b2];
+    document.getElementById("span").innerHTML = Name;
+}
+</script>
+</body>
+</html>
